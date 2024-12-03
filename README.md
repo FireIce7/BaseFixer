@@ -1,41 +1,69 @@
-BaseFixer Plugin by Pitu
 
---> Key Features
+# BaseFixer Plugin by Pitu
 
-- Customizable Command Activation
+O **BaseFixer** é um plugin customizável para servidores Rust, projetado para simplificar o reparo de estruturas enquanto otimiza o desempenho do servidor.
 
-Set the command to activate the plugin via the configuration file.
-Configurable Messages and Colors
+---
 
-- Customize all in-game messages and their colors
+## Key Features
 
-- Flexible Repair Material Configuration
+### Customizable Command Activation
+- Configure o comando para ativar o plugin via o arquivo de configuração.
 
-Choose which materials (Wood, Stone, Metal Fragments, High-Quality Metal) are required for repairs. Defaults to Metal Fragments and High-Quality Metal.
+### Configurable Messages and Colors
+- Personalize todas as mensagens exibidas no jogo e suas cores.
 
-- Permission System
+### Flexible Repair Material Configuration
+- Escolha quais materiais são necessários para reparos:
+  - **Wood**
+  - **Stone**
+  - **Metal Fragments** (padrão)
+  - **High-Quality Metal** (padrão)
 
-Permissions: basefixer.use for using the command and basefixer.noplayertax to bypass material requirements.
+### Permission System
+- **Permissões Disponíveis**:
+  - `basefixer.use`: Necessária para usar o comando.
+  - `basefixer.noplayertax`: Isenta os jogadores da necessidade de materiais.
 
---> Performance Optimizations:
+---
 
-- Dynamic Batching
+## Performance Optimizations
 
-Adjusts entities processed per second based on server load.
-Rate Limiting
+### Dynamic Batching
+- Ajusta dinamicamente a quantidade de entidades processadas por segundo com base na carga do servidor.
 
-Controls the number of simultaneous repair commands to reduce server strain.
+### Rate Limiting
+- Controla o número de comandos de reparo simultâneos para reduzir o impacto no servidor.
 
-- Asynchronous Processing
+### Asynchronous Processing
+- Desloca tarefas intensivas para threads assíncronas, melhorando o desempenho do servidor.
 
-Offloads intensive tasks from the main server thread to enhance performance.
+---
 
-- Configuration Options
+## Configuration Options
 
-1. Entities Per Second: Number of entities processed per second.
-2. Damage Repair Cooldown: Cooldown time between repair commands.
-3. Repair Cost Multiplier: Multiplier for repair material costs.
-4. Global Repair Limit: Maximum number of entities repaired at once.
-5. Command: Command to activate the plugin. (default /br)
-6. Messages: Customizable messages for various plugin states.
-7. Repair Materials: Choose required repair materials (Wood, Stone, Metal Fragments, High-Quality Metal).
+O plugin oferece diversas opções de configuração para se adequar às necessidades do seu servidor:
+
+1. **Entities Per Second**:
+   - Define o número de entidades processadas por segundo.
+2. **Damage Repair Cooldown**:
+   - Tempo de cooldown entre comandos de reparo.
+3. **Repair Cost Multiplier**:
+   - Multiplicador para o custo de materiais de reparo.
+4. **Global Repair Limit**:
+   - Limite máximo de entidades reparadas de uma vez.
+5. **Command**:
+   - Comando para ativar o plugin (padrão: `/br`).
+6. **Messages**:
+   - Mensagens customizáveis para diferentes estados do plugin.
+7. **Repair Materials**:
+   - Materiais necessários para reparos:
+     - Wood
+     - Stone
+     - Metal Fragments
+     - High-Quality Metal
+
+---
+
+Este plugin é altamente configurável e ideal para servidores que buscam manter um equilíbrio entre funcionalidade e desempenho. Faça ajustes no arquivo de configuração para aproveitar ao máximo o BaseFixer!
+
